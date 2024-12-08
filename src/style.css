@@ -1,0 +1,705 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: abcd;
+    src: url(./assets/SourceSansPro-Bold.otf);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 80px;
+    /* position: fixed; */
+    background-color: white;
+    width: 100%;
+}
+
+nav figure {
+    color: #FFB30E;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+} 
+
+nav figure span {
+    color: #F17228;
+}
+
+nav figure b {
+    font-size: 30px;
+}
+
+nav img {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.bar i {
+    color: #FFB30E;
+    margin: 0 5px;
+}
+
+.magnify i {
+    color: #FFB30E;
+}
+
+.magnify button i {
+    margin-right: 10px;
+}
+
+.magnify button {
+    color: #FFB30E;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px lightgray;
+    margin-left: 10px;
+    padding: 7px 20px;
+}
+
+.magnify input {
+    font-weight: bold;
+    color: black;
+    border: none;
+    width: 100px;
+    margin: 0 20px 0 10px;
+}
+
+/* Are you Starving? */
+
+.header {
+    display: flex;
+    background-color: rgb(255, 191, 0);
+    padding: 80px 150px 14px 150px;
+    justify-content: space-between;
+}
+
+.text h1 {
+    color: #FFFFFF;
+    font-weight: bold;
+    word-spacing: 5px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.bike {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.bike input {
+    background-color: #F5F5F5;
+    color: #9E9E9E;
+    border: none;
+    width: 27rem;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    background-image: url("./assets/Images/location-dot-solid.svg");
+    color: #fd554c;
+    background-position: 10px;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+}
+
+.bike button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 25px;
+    word-spacing: 5px;
+    font-weight: bold;
+    font-size: small;
+}
+
+.delivery {
+    color: #F17228;
+    background-color: #f6ded0;
+    box-shadow: 0px 3px 4px 0px lightgray;
+}
+
+.pickup {
+    color: #757575;
+    background-color: transparent;
+}
+
+.bike hr {
+    color: lightgray;
+    margin: 20px 0;
+}
+
+.find {
+    color: white;
+    background-color: #fd554c;
+    padding: 15px 40px !important;
+}
+
+.header figure {
+    padding: 30px 0px 0px 0px !important;
+    height: 22rem;
+}
+
+.header img {
+    height: 22rem;
+}
+
+/* MAIN */
+
+/* Greys Vage */
+
+.greys {
+    margin-block: 80px;
+}
+
+#con {
+    display: flex;
+    padding: 80px 150px;
+}
+
+#con figure {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+
+#con .percentage {
+    position: absolute;
+    bottom: 138px;
+    color: white;
+    font-size: 40px;
+    line-height: 105%;
+    background-color: orange;
+    border-radius: 0 20px 0 10px;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+}
+
+#con figcaption p {
+    margin-top: 10px;
+    color: #F17228;
+    background-color: #f3ccb6;
+    border-radius: 5px;
+    width: 65%;
+    padding: 3px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+}
+
+/* How does it work */
+
+.info {
+    background-color: #fff7e6;
+    display: block;
+    height: 450px;
+    overflow-y: hidden;
+    padding: 20px;
+}
+
+.info h1 {
+    width: 100%;
+    text-align: center;
+    color: orange;
+    margin: 50px auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: bottom;
+}
+
+.container figure {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 130px;
+    align-items: center;
+    text-align: center;
+}
+
+.container img {
+    height: 100%;
+}
+
+.container p {
+    width: 180%;
+    font-size: medium;
+}
+
+/**************** Popular Items ************/
+
+.popular {
+    position: relative;
+}
+
+.popular h1,
+.featured h1 {
+    text-align: center;
+    margin: 100px auto 30px auto;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 0 80px;
+}
+
+.button button {
+    color: white;
+    background-color: #FAAA01;
+    border: none;
+    margin: 20vh 0;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 500;
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px 5px #FAAA01;
+}
+
+.abcd {
+    margin: 20vh 30px 0 39em !important;
+}
+
+.rectangle {
+    display: flex;
+    padding: 50px 150px;
+}
+
+.rectangle figure {
+    padding: 10px;
+}
+
+.rectangle img {
+    margin-bottom: 10px;
+}
+
+.rectangle p {
+    margin: 3px;
+    font-size: small;
+    font-weight: 700;
+}
+
+.orange {
+    font-weight: 400 !important;
+    color: orange;
+}
+
+.rectangle button {
+    background-color: rgb(255, 106, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    box-shadow: 2px 2px 0px 3px rgb(255, 106, 0);
+}
+
+/* ******Featured Restaurants****** */
+
+.top,
+.bottom {
+    display: flex;
+    padding: 30px 150px;
+}
+
+.featured img {
+    border-radius: 10px;
+}
+
+.featured figure {
+    padding: 10px;
+}
+
+.featured figcaption {
+    margin-top: 20px;
+    display: flex;
+}
+
+.featured figcaption img {
+    width: 64px;
+    height: 64px;
+}
+
+.featured span {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    font-size: 15px;
+}
+
+.featured i {
+    color: #F17228;
+    margin-top: 5px;
+    font-size: small;
+    word-spacing: 5px;
+}
+
+.featured p {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #79B93C;
+    background-color: #cbe9b0;
+    padding: 4px 4px;
+    width: 50%;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.toptwo {
+    background-color: #f3ccb6 !important;
+    color: #F17228 !important;
+    width: 65% !important;
+}
+
+.off {
+    position: relative;
+    bottom: 22.5rem;
+    left: 19px;
+    font-weight: 500;
+    color: white;
+}
+
+.off i {
+    color: white;
+    /* margin-right: 2px; */
+}
+
+.percent {
+    background-color: #F17228;
+}
+
+.fast {
+    background-color: #FFB30E;
+}
+
+.percent, .fast {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.view {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    border: none;
+    font-weight: 700;
+    margin: 0 45%;
+    border-radius: 8px;
+    padding: 10px 30px;
+    box-shadow: 0px 5px 10px orange;
+}
+
+\&#62::content {
+    height: 10%px;
+}
+
+.searchfood {
+    background-color: #FEFAF1;
+    padding: 80px 150px;
+    margin-top: 5rem;
+}
+
+.pizza {
+    display: flex;
+}
+
+.pizza figure {
+    padding: 10px 10px;
+}
+
+.pizza img {
+    border-radius: 360px;
+}
+
+.pizza figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.searchtext {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.searchtext p {
+    color: #FAAA01;
+    font-weight: bold;
+    padding-top: 7%;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.searchtext button {
+    color: white;
+    background-color: #FAAA01;
+    border: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 500;
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px 5px #FAAA01;
+}
+
+.searchtext div {
+    display: flex;
+}
+
+.install {
+    background-color: #FEEFD0;
+    padding: 80px 230px;
+}
+
+.daily {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.daily p {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: rgb(255, 106, 0);
+    margin: auto 0px auto 30px;
+    line-height: 35px;
+    max-width: min-content;
+}
+
+.daily hr {
+    background-color: #CFCFCF;
+    width: 3px;
+    height: 90px;
+    border: 0;
+    margin: auto 40px auto 40px;
+}
+
+.mobile {
+    margin-bottom: 10rem;
+}
+
+.mobile img {
+    width: 100%;
+}
+
+.cards {
+    padding: 80px 150px;
+}
+
+.cards figure {
+    display: flex;
+    box-shadow: 0 1px 10px #9E9E9E;
+    margin-bottom: 7rem;
+    border-radius: 10px;
+}
+
+.cards figure img {
+    width: 66.67%;
+    border-radius: 10px 0 0 10px;
+}
+
+.celebrate img {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.cards figcaption {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.cards figcaption p {
+    padding: 5px 0 5rem 0;
+    color: #616161;
+    font-size: 15px;
+}
+
+.cards h3 {
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.cards b {
+    font-weight: 700;
+    color: #FFB30E;
+}
+
+.cards figcaption button {
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 5px 10px orange;
+    text-transform: uppercase;
+}
+
+/******** footer ***********/
+.ready {
+    position: relative;
+}
+
+.ready img {
+    width: 100%;
+}
+
+.ready p,
+.ready button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ready p {
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    padding: 80px;
+    top: 35%;
+    font-family: "Source Sans Pro";
+}
+
+.ready button {
+    border: none;
+    border-radius: 10px;
+    background-color: #F15E28;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 8px;
+    word-spacing: 3px;
+    padding: 12px;
+    /* width: 100%; */
+    text-transform: uppercase;
+    top: 75%;
+}
+
+.final {
+    background-color: #212121;
+    color: #F5F5F5;
+    padding: 120px;
+    font-size: 15px;
+}
+
+.final h3 {
+    color: #FFFFFF;
+    padding-left: 28px;
+    margin-bottom: 40px;
+    font-size: large;
+}
+
+.final section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.final li {
+    padding: 0 40px 15px 0;
+    list-style: none;
+}
+
+.final hr {
+    margin: 4rem 0;
+}
+
+.final button {
+    background-color: #FFA100;
+    color: white;
+    font-size: 12px;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 10px #FFA100;
+}
+
+.reference {
+    display: flex;
+}
+
+.reference ul {
+    padding-right: 20px;
+}
+
+.reference h3 {
+    padding: 0;
+}
+
+.follow p {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.follow i {
+    padding: 0 15px 50px 0;
+}
+
+.follow input {
+    position: relative;
+    background-image: url("./assets/Images/envelope-solid.svg");
+    color: #ADADAD;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding: 7px 60px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #424242;
+}
+
+.follow p, .follow i {
+    color: #616161;
+}
+
+.rights div b {
+    margin-left: 5px;
+}
+
+#heart {
+    color: #FDBC30;
+}
